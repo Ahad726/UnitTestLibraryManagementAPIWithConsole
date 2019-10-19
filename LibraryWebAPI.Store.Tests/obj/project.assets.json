@@ -7246,11 +7246,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Store.Tests\\LibraryWebAPI.Store.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\ATM\\Desktop\\UnitTestLibraryManagementAPIWithConsole\\LibraryWebAPI.Store.Tests\\LibraryWebAPI.Store.Tests.csproj",
       "projectName": "LibraryWebAPI.Store.Tests",
-      "projectPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Store.Tests\\LibraryWebAPI.Store.Tests.csproj",
+      "projectPath": "C:\\Users\\ATM\\Desktop\\UnitTestLibraryManagementAPIWithConsole\\LibraryWebAPI.Store.Tests\\LibraryWebAPI.Store.Tests.csproj",
       "packagesPath": "C:\\Users\\ATM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Store.Tests\\obj\\",
+      "outputPath": "C:\\Users\\ATM\\Desktop\\UnitTestLibraryManagementAPIWithConsole\\LibraryWebAPI.Store.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7269,8 +7269,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Store\\LibraryWebAPI.Store.csproj": {
-              "projectPath": "C:\\Users\\ATM\\Desktop\\LibraryWebAPI\\LibraryWebAPI.Store\\LibraryWebAPI.Store.csproj"
+            "C:\\Users\\ATM\\Desktop\\UnitTestLibraryManagementAPIWithConsole\\LibraryWebAPI.Store\\LibraryWebAPI.Store.csproj": {
+              "projectPath": "C:\\Users\\ATM\\Desktop\\UnitTestLibraryManagementAPIWithConsole\\LibraryWebAPI.Store\\LibraryWebAPI.Store.csproj"
             }
           }
         }
