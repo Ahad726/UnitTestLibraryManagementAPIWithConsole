@@ -74,14 +74,16 @@ namespace LibraryWebAPI.Store.Tests
 
 
         [Test]
-        public void CalculateFine_WhenCalledWithStudentId_ReturnStudentFine()
+        [TestCase("10/29/2019",20.00)]
+        [TestCase("10/22/2019",0.00)]
+        public void CalculateFine_WhenCalledWithStudentId_ReturnStudentFine(string returnDateString,double fineAmount)
         {
 
             // Arrange
             int studentId = 1618017;
             DateTime issueDate = Convert.ToDateTime("10/19/2019");
-            DateTime returnDate = Convert.ToDateTime("10/29/2019");
-            double Fine = 20.00;
+            DateTime returnDate = Convert.ToDateTime(returnDateString);
+            double Fine = fineAmount;
 
             var bookIssueRepositoryMock = _mock.Mock<IBookIssueRepository>();
             var returnBookRepositoryMock = _mock.Mock<IReturnBookRepository>();
@@ -105,8 +107,9 @@ namespace LibraryWebAPI.Store.Tests
 
 
             // Assert
-            actualFine.ShouldBe(Fine);
-            unitOfWorkLibraryService.VerifyAll();
+            //actualFine.ShouldBe(Fine);  
+            //unitOfWorkLibraryService.VerifyAll();
+            Assert.AreEqual(Fine, actualFine);
 
         }
 
