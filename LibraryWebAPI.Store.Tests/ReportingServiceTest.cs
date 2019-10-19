@@ -50,29 +50,21 @@ namespace LibraryWebAPI.Store.Tests
         public void StudentFineCheck_WhenCalledWithStudentId_ReturnFineAmountOfThatStudent()
         {
             // Arrange
-
             int studentId = 101;
-
             double fine = 20.00;
-
 
             var studentRepositoryMock = _mock.Mock<IStudentRepository>();
             var unitOfWorkLibraryService = _mock.Mock<IUnitOfWorkLibraryService>();
 
             studentRepositoryMock.Setup(x => x.CheckFine(studentId)).Returns(fine);
-
             unitOfWorkLibraryService.Setup(x => x.StudentRepository).Returns(studentRepositoryMock.Object);
 
             _reportingService = _mock.Create<ReportingService>
                 (new TypedParameter(typeof(UnitOfWorkLibraryService), unitOfWorkLibraryService.Object));
 
 
-
             // Act
-
             _reportingService.StudentFineCheck(studentId);
-
-
 
             //Assert
             studentRepositoryMock.VerifyAll();
@@ -114,6 +106,7 @@ namespace LibraryWebAPI.Store.Tests
 
             // Assert
             actualFine.ShouldBe(Fine);
+            unitOfWorkLibraryService.VerifyAll();
 
         }
 
